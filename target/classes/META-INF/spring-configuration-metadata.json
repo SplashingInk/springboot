@@ -1,0 +1,78 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.xtl.bean.Person",
+      "sourceType": "com.xtl.bean.Person"
+    },
+    {
+      "name": "person.friend",
+      "type": "com.xtl.bean.Friend",
+      "sourceType": "com.xtl.bean.Friend"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.xtl.config.DruidConfig",
+      "sourceMethod": "druid()"
+    },
+    {
+      "name": "teacher",
+      "type": "com.xtl.bean.Teacher",
+      "sourceType": "com.xtl.bean.Teacher"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xtl.bean.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "com.xtl.bean.Person"
+    },
+    {
+      "name": "person.friend.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xtl.bean.Friend"
+    },
+    {
+      "name": "person.friend.name",
+      "type": "java.lang.String",
+      "sourceType": "com.xtl.bean.Friend"
+    },
+    {
+      "name": "person.last-name",
+      "type": "java.lang.String",
+      "sourceType": "com.xtl.bean.Person"
+    },
+    {
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.xtl.bean.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.xtl.bean.Person"
+    },
+    {
+      "name": "teacher.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xtl.bean.Teacher"
+    },
+    {
+      "name": "teacher.first-name",
+      "type": "java.lang.String",
+      "sourceType": "com.xtl.bean.Teacher"
+    },
+    {
+      "name": "teacher.sex",
+      "type": "java.lang.Character",
+      "sourceType": "com.xtl.bean.Teacher"
+    }
+  ],
+  "hints": []
+}

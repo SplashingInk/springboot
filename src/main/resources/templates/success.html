@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎界面</title>
+</head>
+<body>
+    <h2>欢迎使用thymeleaf!</h2><br/>
+    <!--转义特殊字符，所以<h1>标签直接显示-->
+    <div th:text="${job}"></div>
+    <hr/>
+    <!--不转义特殊字符，所以<h1>标签是大标题的形式-->
+    <div th:utext="${job}"></div>
+    <hr/>
+    <div th:each="item:${animations}" th:text="${item}"></div>
+    <hr/>
+    <form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit"/>
+    </form>
+</body>
+</html>
